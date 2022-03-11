@@ -1,0 +1,57 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="conversor-moedas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="./conversor-moedas.js"></script>
+    <div class="container">
+
+        <div class="header">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" 
+            class="page-logo" alt="">
+    
+            <h1 class="title">
+                Conversor de moedas
+            </h1>
+    
+            <p class="description">
+                Quer saber quanto você teria em dólares?
+            </p>
+        </div>
+    
+        <div class="main">
+           <p class="main-description">
+            Preencha o campo abaixo com o valor em Reais
+           </p>
+
+           <div class="reais">
+               <label for="reaisConvertido"></label>  
+               <input class="valorEmReal" type="number" placeholder="R$" id="valorEmReal"> 
+            </div>
+        </div>
+
+        <div class="converter">
+            <button  class="button" onclick="Converter()"  type="submit"> 
+                Converter
+            </button>
+        </div>
+    
+        <div class="result">
+            <p class="result-description">
+                Você tem U$ <span id="resultado" >0,00</span>
+            </p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+        
